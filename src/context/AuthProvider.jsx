@@ -53,7 +53,6 @@ const AuthProvider = ({children}) => {  // children hace referencia a todos los 
             }
             const config = {
                 headers: {
-                   // "Access-Control-Allow-Origin": "https://localhost:5173",
                     "Content-Type": "application/json",
                     Authorization: `Bearer ${token}`
                 }
