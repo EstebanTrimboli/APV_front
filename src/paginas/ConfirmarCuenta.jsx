@@ -8,7 +8,7 @@ const ConfirmarCuenta = () => {
   const [ cuentaConfirmada, setCuentaConfirmada ] = useState(false);
   const [ cargando, setCargando ] = useState(true);
   const params = useParams();
-  const { id } = params;
+  const { token } = params;
   const [ alerta, setAlerta ] = useState({});
 
   useEffect(() => {
