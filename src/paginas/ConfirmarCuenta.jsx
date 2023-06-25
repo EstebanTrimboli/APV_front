@@ -14,7 +14,7 @@ const ConfirmarCuenta = () => {
   useEffect(() => {
     const confirmarCuenta = async () => {
       try {
-        const { data } = await clienteAxios(`/veterinarios/confirmar/${id}`);
+        const { data } = await clienteAxios(`/veterinarios/confirmar/${token}`);
         setCuentaConfirmada(true);
         setAlerta({msg: data.msg})
         
